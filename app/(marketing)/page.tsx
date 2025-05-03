@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Loader } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import LoginModal from "@/components/loginModal"
+import LoginModal from "@/components/auth-modal"
 import {  useForm  } from "react-hook-form"
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col items-center gap-y-3 max-w-[330px] w-full">
             {/* <Loader className="h-5 w-5 text-muted-foreground animate-spin" /> */}
-            <LoginModal>
+            <LoginModal mode="signup">
               <Button size="lg" variant="primary" className="w-full">
                 Get Start
               </Button>
